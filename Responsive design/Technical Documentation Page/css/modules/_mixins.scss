@@ -1,0 +1,36 @@
+@mixin links {
+	text-decoration: none;
+	color: #363636;
+	font-weight: 500;
+}
+
+@mixin headings {
+	font-size: 2.7rem;
+	font-weight: 700;
+	color: #363636;
+	padding: 25px 0px;
+}
+
+@mixin paragraph {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #363636;
+	margin-bottom: 18px;
+	margin-left: 50px;
+	line-height: 2.5rem;
+	text-align: left;
+}
+
+@mixin program_code {
+	position: relative;
+	display: block;
+	font-size: 1.4rem;
+	padding: 20px;
+	margin-bottom: 18px;
+	margin-left: 50px;
+	background-color: #a4c5c6;
+	border: none;
+	border-radius: 10px;
+	line-height: 2.4rem;
+	text-align: left;
+}
