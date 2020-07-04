@@ -5,16 +5,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Technical Documentation Page</title>
 		<link rel="stylesheet" href="./css/style.css" />
-		<script
+		<!-- <script
 			src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
 			defer
-		></script>
+		></script> -->
 	</head>
 
 	<body>
 		<nav id="navbar">
 			<header class="nav-title">JavaScript Documentation</header>
-			<ul>
+			<ul id="nav-list">
 				<li><a class="nav-link" href="#introduction">Introduction</a></li>
 				<li>
 					<a class="nav-link" href="#what_you_should_already_know"
@@ -52,6 +52,12 @@
 				</li>
 				<li><a class="nav-link" href="#reference">Reference</a></li>
 			</ul>
+
+			<div id="toggle" class="container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</nav>
 
 		<main id="main-doc">
@@ -503,5 +509,13 @@
 				</p>
 			</section>
 		</main>
+
+		<script src="./app.js"></script>
+		<script>
+			if (window.matchMedia("(max-width : 850px)").matches == false) {
+				console.log("AWD");
+				document.querySelector("#nav-list").style.transform = "translateX(0px)";
+			}
+		</script>
 	</body>
 </html>
