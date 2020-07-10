@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather Forecast</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<main id="main-section">
+			<div class="container">
+				<h1 class="main-title">Weather Forecast</h1>
+				<form action="" id="form-container">
+					<input
+						id="search"
+						type="text"
+						name="city"
+						value=""
+						placeholder="Enter City"
+					/>
+					<button id="search-btn">Search</button>
+				</form>
+				<div class="info">
+                    <h1 class="output">0</h1>
+                        
+					<div class="info-output"><span id="celcius" class="selected" onclick="change()"><sup>&#9900</sup>C</span>&nbsp;&#10072;<span onclick="change()" id="faren"><sup>&#9900</sup>F</span>
+					
+                    </div>
+                    <div class="city"></div>
+			</div>
+		</main>
+
+		<script src="./app.js"></script>
+	</body>
+</html>
