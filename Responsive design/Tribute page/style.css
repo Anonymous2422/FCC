@@ -21,7 +21,6 @@ p {
 }
 
 #img-div {
-	displa: block;
 	text-align: center;
 	padding: 10px;
 	background-color: white;
@@ -35,7 +34,7 @@ p {
 }
 
 #img-caption {
-	maring: 15px 0px 5px 0px;
+	margin: 15px 0px 5px 0px;
 	font-size: 12px;
 }
 
